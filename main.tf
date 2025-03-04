@@ -50,7 +50,7 @@ resource "azurerm_network_security_group" "nsg" {
     depends_on = [azurerm_resource_group.linux_vm_rg]
 
     security_rule {
-        name = "myNSGRuleHTTP
+        name = "myNSGRuleHTTP"
         priority = 200
         direction = "Inbound"
         access = "Allow"
@@ -62,7 +62,7 @@ resource "azurerm_network_security_group" "nsg" {
     }
 
     security_rule {
-        name = "myNSGRuleSSH
+        name = "myNSGRuleSSH"
         priority = 205
         direction = "Inbound"
         access = "Allow"
