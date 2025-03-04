@@ -99,8 +99,8 @@ resource "azurerm_network_interface_security_group_association" "nsg_assoc_1" {
 
 
 
-# Creates the virtual machines
-resource "azurerm_windows_virtual_machine" "vm1" {
+# Creates the virtual machine
+resource "azurerm_linux_virtual_machine" "vm1" {
     name = var.vm1
     location = var.loc
     resource_group_name = var.rg
