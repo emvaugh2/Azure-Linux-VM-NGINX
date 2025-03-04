@@ -1,0 +1,12 @@
+#cloud-config 
+
+package_update: true
+package-upgrade: true
+packages:
+    - nginx
+runcmd:
+    - systemctl start nginx
+    - systemctl enable nginx
+    - echo "<h1>Welcome to My Azure Nginx Server! Lets get this money!</h1>" > /var/www/html/index.html
+    - systemctl restart nginx
+
