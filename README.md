@@ -9,4 +9,6 @@ Azure VM with Nginx using Terraform and Cloud-Init
 
 Step 1 will take a lot of steps but luckily for me, I've already set up GitHub Actions and some Terraform code from our last deployment to expedite this process. 
 
+I'll update this process as well. 
+
 
